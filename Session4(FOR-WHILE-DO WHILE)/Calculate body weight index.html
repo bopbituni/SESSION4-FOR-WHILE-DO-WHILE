@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate body weight index</title>
+</head>
+<body>
+<script>
+    let height = Number(prompt("Nhap vao so chieu cao:", ""));
+    let weight = Number(prompt("Nhap vao so can nang:", ""));
+    let bmi = weight / (height*height);
+    if(bmi<18){
+        alert("Underweight");
+    }
+    else if(bmi>=18&&bmi<25){
+        alert("Normal");
+    }
+    else if(bmi>=25&&bmi<30){
+        alert("Overweight");
+    }
+    else{
+        alert("Obese");
+    }
+</script>
+</body>
+</html>
