@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>multiplication table</title>
 </head>
 <body>
-
+<script>
+    let display, i, j;
+    display = "<table border ='1' width='400' cellspacing='3' cellpadding ='7'>";
+    for (i=1;i<=10;i++){
+        display = display + "<tr>";
+        for (j=1;j<=9;j++) {
+            display = display + "<td>" + i  + "*" + j + "="  + i*j + "</td>";
+        }
+        display = display + "</tr>";
+    }
+    display = display + "</table>";
+    document.write(display);
+</script>
 </body>
 </html>
